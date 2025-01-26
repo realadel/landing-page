@@ -1,0 +1,390 @@
+:root {
+    --primary-color: #4db694;
+    --primary-color-dark: #389b79;
+}
+body {
+    margin: 0;
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-1 {
+    gap: 1px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.px-5 {
+    padding: 0 5px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-5 {
+    margin: 5px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.my-5 {
+    margin: 5px 0;
+}
+
+.my-10 {
+    margin: 10px 0;
+}
+
+.mx-10 {
+    margin: 0 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.px-10 {
+    padding: 0 10px;
+}
+
+.py-5 {
+    padding: 5px 0;
+}
+
+.py-10 {
+    padding: 10px 0;
+}
+
+.p-5 {
+    padding: 5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-dark {
+    color: #6d6d6d;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-primary-dark {
+    color: var(--primary-color-dark);
+}
+
+.bg-coral {
+    background-color: coral;
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-light-gray {
+    background-color: rgba(220, 220, 220, 0.37);
+}
+
+.text-lightcyan {
+    color: lightcyan;
+}
+
+.ltr-dir {
+    direction: ltr;
+}
+
+/*Custom Styles*/
+
+.brand {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: opacity 110ms ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.menu-link:hover {
+    opacity: 0.6;
+}
+
+.bg-primary-gradient {
+    background: linear-gradient(to left, #257b5e 40%, #4bb490);
+}
+
+.btn {
+    font-size: 1rem;
+    font-family: "Rubik", serif;
+    padding: 10px 40px;
+    background-color: #fdaa10;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #f4a410;
+}
+
+button:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.btn:active {
+    background-color: #f4a410;
+}
+
+#main-content {
+    max-width: 1024px;
+    margin: auto;
+}
+
+/*dropdown style START*/
+.dropdown-menu a {
+    transition: transform 110ms ease-in-out;
+    padding: 5px 10px;
+}
+
+.dropdown-menu .dropdown-item:first-child a {
+    border-radius: 10px 10px 0 0;
+}
+
+.dropdown-menu .dropdown-item:last-child a {
+    border-radius: 0 0 10px 10px;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--primary-color-dark);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+    border-radius: 10px;
+    top: 25px;
+    z-index: 1;
+    background-color: var(--primary-color-dark);
+}
+.dropdown-item a {
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
+/*dropdown style END*/
+
+
+/*intro style START*/
+#intro {
+    height: 50vh;
+}
+#intro-header {
+    position: relative;
+}
+/*intro style END*/
+
+/*Our Vision style START*/
+#our-vision {
+    margin-top: 42px;
+}
+
+.our-vision-box {
+    max-width: 1024px;
+}
+
+.our-vision-item {
+    box-sizing: border-box;
+    flex: 1 1 450px;
+    background-color: rgba(220, 220, 220, 0.37);
+    border-radius: 10px;
+    transition: box-shadow 350ms ease;
+}
+/*Our Vision style END*/
+
+
+/*contact form style START*/
+
+#contact {
+    margin-top: 82px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 70px 70px 1fr 50px;
+    gap: 20px;
+}
+
+form input, form textarea {
+    height: 2.6rem;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 0.9rem;
+    font-family: "Rubik", serif;
+    color: #6d6d6d;
+    transition: border 120ms ease, box-shadow 120ms ease;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid var(--primary-color-dark);
+    outline: none;
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.38);*/
+    box-sizing: border-box;
+}
+
+.contact-form, form input::placeholder, form textarea::placeholder {
+    color: #6d6d6d;
+    min-height: 2rem;
+}
+
+#username-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#msg-title-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#message-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#send-button {
+
+}
+
+.send-form {
+    padding: 12px 25px;
+    color: white;
+    font-family: "Rubik", serif;
+    background-color: var(--primary-color-dark);
+}
+
+.send-form:hover {
+    background-color: #349272;
+}
+/*contact form style END*/
+
+#map {
+    margin-top: 42px;
+}
+
