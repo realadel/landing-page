@@ -13,6 +13,10 @@ body {
     display: flex;
 }
 
+.d-none {
+    display: none;
+}
+
 .flex-col {
     flex-direction: column;
 }
@@ -201,7 +205,7 @@ nav ul {
     list-style-type: none;
 }
 
-.menu-link:hover {
+.menu-link:hover, footer a:hover {
     opacity: 0.6;
 }
 
@@ -244,6 +248,7 @@ button:active, .contact-btn:active {
 #main-content {
     max-width: 1024px;
     margin: auto;
+    padding: 0 1rem;
 }
 
 /*dropdown style START*/
@@ -296,6 +301,14 @@ button:active, .contact-btn:active {
 }
 #intro-header {
     position: relative;
+    font-size: 60px;
+}
+
+#intro-paragraph {
+    max-width: 70%;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7
 }
 /*intro style END*/
 
@@ -384,7 +397,72 @@ input:focus, textarea:focus {
 }
 /*contact form style END*/
 
+/*footer style START*/
+#footer {
+    justify-content: space-between;
+    height: auto;
+    padding: 1rem
+}
+
+#brand-and-social-media-links {
+    gap: 2rem;
+    align-items: center;
+}
+/*footer style END*/
+
+
+/*map style START*/
 #map {
     margin-top: 42px;
 }
+/*map style END*/
+
+/*Responsive Media Queries START*/
+
+@media screen and (max-width: 860px){
+    #burger-menu {
+        display: flex;
+    }
+    .main-menu {
+        display: none;
+    }
+
+    .brand {
+        justify-content: normal;
+        flex-grow: 1;
+        margin: 1rem 0;
+    }
+
+    #intro-paragraph {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px){
+    #intro {
+        height: auto;
+    }
+    #intro  h1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #links {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 960px) {
+    .our-vision-item {
+        flex: 1 1 350px;
+    }
+}
+
+/*Responsive Media Queries END*/
 

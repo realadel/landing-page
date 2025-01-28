@@ -53,16 +53,9 @@
                 </li>
             </ul>
 
-            <ul class="flex gap-10">
+            <ul id="burger-menu" class="gap-10 d-none">
                 <li>
-                    <a href="" class="menu-link">
-                        <i class="fa-solid fa-search"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="menu-link">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
+                        <i class="fa-solid fa-bars text-white text-bold"></i>
                 </li>
             </ul>
 
@@ -70,15 +63,16 @@
     </header>
 
     <main>
-        <section id="intro" class="flex flex-col justify-center px-10 bg-primary-gradient">
-            <h1 class="m-0 text-white" style="font-size: 60px" id="intro-header">نبني اليوم... لنبتكر المستقبـــل</h1>
-            <p class="text-lightcyan" style="max-width: 70%; font-size: 18px; line-height: 28px; opacity: 0.7">في <strong>شركة عادل لاشريك له ذ.م.م</strong>، نؤمن بأن الجودة والإبداع هما الأساس لتحقيق مشاريع ناجحة. مع خبرة واسعة وفريق متخصص، نقدم خدمات متكاملة تلبي تطلعاتكم وتواكب تطورات السوق.
+        <section id="intro" class="flex flex-col justify-center bg-primary-gradient" style="padding: 1rem">
+            <h1 id="intro-header" class="m-0 text-white">نبني اليوم... لنبتكر المستقبـــل</h1>
+            <p id="intro-paragraph" class="text-lightcyan">في <strong>شركة عادل لاشريك له ذ.م.م</strong>، نؤمن بأن الجودة والإبداع هما الأساس لتحقيق مشاريع ناجحة. مع خبرة واسعة وفريق متخصص، نقدم خدمات متكاملة تلبي تطلعاتكم وتواكب تطورات السوق.
                     رؤيتنا هي أن نكون شركاء في تحقيق نجاحكم من خلال تقديم حلول بناء مبتكرة ومستدامة تعكس احتياجات المستقبل.
             </p>
 
             <div>
-                <a href="#contact" class="btn contact-btn"> تواصل معنا
-                    <i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#contact" class="btn contact-btn inline-block"> تواصل معنا
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
             </div>
         </section>
 
@@ -172,8 +166,8 @@
         </section>
 
         <footer style="margin-top: 2rem">
-            <section id="footer" style="justify-content: space-between; align-content: center; height: 25vh; padding: 20px" class="bg-primary-gradient flex flex-row flex-wrap">
-                <section id="brand-and-social-media-links" class="flex flex-col justify-center" style="gap: 2rem">
+            <section id="footer" class="bg-primary-gradient flex flex-row flex-wrap">
+                <section id="brand-and-social-media-links" class="flex flex-col">
                     <div>
                         <h2 class="text-white m-0">شركة عادل لاشريك له</h2>
                         <p class="m-0 text-lightcyan" style="opacity: 0.8">نبني اليوم... لنبتكر المستقبـــل</p>
