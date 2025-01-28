@@ -209,6 +209,10 @@ nav ul {
     opacity: 0.6;
 }
 
+.bg-primary-gradient-to-bottom {
+    background: linear-gradient(to bottom, #257b5e, #4bb490);
+}
+
 .bg-primary-gradient-to-top {
     background: linear-gradient(to top, #257b5e, #4bb490);
 }
