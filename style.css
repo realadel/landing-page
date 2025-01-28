@@ -216,7 +216,7 @@ nav ul {
     background-color: #fdaa10;
 }
 
-button {
+button, .contact-btn {
     border: none;
     border-radius: 10px;
     color: white;
@@ -228,12 +228,12 @@ button {
     background-color: #f4a410;
 }
 
-button:hover {
+button:hover, .contact-btn:hover {
     transform: scale(1.02);
     cursor: pointer;
 }
 
-button:active {
+button:active, .contact-btn:active {
     transform: scale(0.98);
 }
 
