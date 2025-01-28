@@ -209,8 +209,8 @@ nav ul {
     opacity: 0.6;
 }
 
-.bg-primary-gradient {
-    background: linear-gradient(to left, #257b5e 40%, #4bb490);
+.bg-primary-gradient-to-top {
+    background: linear-gradient(to top, #257b5e, #4bb490);
 }
 
 .btn {
