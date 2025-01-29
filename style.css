@@ -1,6 +1,6 @@
 :root {
     --primary-color: #4db694;
-    --primary-color-dark: #389b79;
+    --primary-color-dark: #3a8f6e;
 }
 body {
     margin: 0;
@@ -210,11 +210,11 @@ nav ul {
 }
 
 .bg-primary-gradient-to-bottom {
-    background: linear-gradient(to bottom, #257b5e, #4bb490);
+    background: linear-gradient(to bottom, #257b5e, #3a8f6e);
 }
 
 .bg-primary-gradient-to-top {
-    background: linear-gradient(to top, #257b5e, #4bb490);
+    background: linear-gradient(to top, #257b5e, #3a8f6e);
 }
 
 .btn {
@@ -409,7 +409,7 @@ input:focus, textarea:focus {
 }
 
 #brand-and-social-media-links {
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
 }
 /*footer style END*/
